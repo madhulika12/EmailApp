@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title> Assignment 1 </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+  <body data-ng-app="assignment1App">
+    <div class="col-sm-6 col-md-4 col-md-offset-4 col-lg-3">
+      <div class="account-wall">
+        <form data-ng-controller="loginCtrl as authenticate" class="form-signin">
+          <input type="text" data-ng-model="authenticate.username" placeholder="Username" required="" autofocus="" class="form-control">
+          <input type="password" data-ng-model="authenticate.password" placeholder="Password" required="" class="form-control">
+          <button type="submit" data-ng-click="authenticate.collect(authenticate.username, authenticate.password)" class="btn btn-lg btn-primary btn-block"> Sign in </button>
+        </form>
+      </div>
+    </div>
+    <script>
+      !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+      (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+      r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+      }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-XXXXX-X');
+      ga('send', 'pageview');
+    </script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="login/loginController.js"></script>
+    <script src="login/fetchDataService.js"></script>
+    <script src="login/validateService.js"></script>
+  </body>
+</html>

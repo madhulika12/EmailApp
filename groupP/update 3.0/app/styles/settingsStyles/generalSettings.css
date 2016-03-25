@@ -1,0 +1,32 @@
+tr td:first-child {
+	font-weight: bold;
+}
+
+#pageSize {
+	margin-top: 1%;
+}
+
+label {
+	font-weight: 100;
+}
+
+.span12 {
+	margin-top: 0.5%;
+}
+
+#signature {
+	float: left;
+	margin-right: 1%;
+}
+
+textarea {
+	display: inline-block;
+}
+
+.form-actions {
+	text-align: center;
+}
+
+.btn-primary {
+	margin-right: 1%;
+}
